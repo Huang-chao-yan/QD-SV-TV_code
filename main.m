@@ -7,10 +7,7 @@ clc
 clear 
 close all
 %load ('0804_15_1_12.75.mat')
-load h
-load I
-load ID
-sigma=0.05;
+[I,ID,h,sigma]= madeblur();
 imagname='0804.png';
 %crop them for easy to get the test results
 %in the real test we test the full original image
